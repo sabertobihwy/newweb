@@ -9,7 +9,6 @@ import (
 
 func relaunch() {
 	cmd := exec.Command("sh", "./deploy.sh")
-	cmd.Dir = ""
 	err := cmd.Start()
 	if err != nil {
 		log.Fatal(err)

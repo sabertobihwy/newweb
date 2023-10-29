@@ -6,7 +6,7 @@ import (
 )
 
 func firstPage(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "<h1>Hello world123</h1>")
+	io.WriteString(w, "<h1>Using webhook</h1>")
 }
 func main() {
 	http.HandleFunc("/", firstPage)
